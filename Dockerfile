@@ -1,4 +1,5 @@
-FROM node:18-alpine
+FROM node:20-alpine
+
 RUN apk add --no-cache tzdata
 WORKDIR /app
 RUN npm install -g n8n@latest
